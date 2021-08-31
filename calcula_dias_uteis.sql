@@ -23,7 +23,7 @@ if num_days>0 then
     where row_number = num_days);
     
 else
- raise notice 'teste';
+ 
   dd = (select d
     from (
         select d::date, row_number() over (order by d)
